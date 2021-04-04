@@ -1,0 +1,85 @@
+
+.float_right{
+    float:right;
+}
+
+.regional_container {
+  
+    padding: 24px;
+    /* position: absolute; */
+    left: 66.81%;
+    
+    top: 19.72%;
+    bottom: 41.32%;
+
+    min-height: 561px;
+    width: 286px;
+
+    background: #1D2125;
+    box-shadow: 15.0502px 15.0502px 50.1672px rgba(0, 0, 0, 0.25);
+    border-radius: 28.0936px;
+
+  }
+
+.region-title{
+    float:left;
+    width: 50%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    align-self: center;
+  }
+
+/* div to render the emoji in */
+.emoji-div{
+    float:right;
+    width: 40%;
+    text-align: right;
+}
+
+/* white line under the region title heading */
+.line{
+    /* clear:both used to ignore float above and 
+    go back to normal */
+    clear:both; 
+    position: relative;
+  
+    border: 1.00334px solid #FFFFFF;
+    width: 179px;
+}
+
+.regional-top-hashtags{
+    height:170px;
+    padding-top: 10%;
+}
+
+
+.emotional-breakdown{
+    padding-top: 7%;
+    height: 250px;
+
+}
+
+.styled-progress-bar .progress-bar{
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    border-radius: 19.5px;
+    text-align: right;
+    padding-right: 5px;
+    
+}
+
+
+.progress_bar_container{
+    height: 50px;
+}
+
+.sample-size{
+    text-align: center;
+    font-family: Lato;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

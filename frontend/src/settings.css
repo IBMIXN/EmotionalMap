@@ -1,0 +1,61 @@
+.settings-container{
+    display:flex;
+    margin:0 auto;
+    width:80%;
+    margin-top: 10em;
+    background-color:#212529;
+    border-radius: 15px;
+    flex-direction: column;
+    
+}
+/* *{
+    border: red solid 1px
+} */
+.page{
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+  
+}
+.settings-title{
+    font-family: Lato;
+    font-size: 2.5rem;
+    color:white;
+    margin: 3em;
+    text-decoration: underline;
+
+}
+.colour-changers{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.settings-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.emotion-title{
+    display: flex;
+    width: 50%;
+    margin: 3em;
+    justify-content:center;
+}
+.colour-picker{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin: 3em;
+    justify-content:center;
+}
+.done-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.done-button{
+    background-color: green;
+    border-radius: 20px;
+    padding: 0.8em 1.9em;
+    margin:3em;
+}
