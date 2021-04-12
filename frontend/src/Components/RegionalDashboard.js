@@ -35,11 +35,11 @@ export default class RegionalDashboard extends Component {
             }
         }
 
-        chng_inner_color(this.fear_inner, colourCode.Fear);
+        chng_inner_color(this.fear_inner, colourCode.Apprehensive);
         chng_inner_color(this.confident_inner, colourCode.Confident);
-        chng_inner_color(this.anger_inner, colourCode.Anger);
+        chng_inner_color(this.anger_inner, colourCode.Impassioned);
         chng_inner_color(this.joy_inner, colourCode.Joy);
-        chng_inner_color(this.sadness_inner, colourCode.Sadness);
+        chng_inner_color(this.sadness_inner, colourCode.Concerned);
     }
 
     render() {

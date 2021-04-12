@@ -71,6 +71,7 @@ class App extends React.Component {
         }
         else{
           let json = await result.json();
+         
           this.setState({
               mapData: json.anlysis,
               dashboardData : this.findRegionData(json.anlysis, "United Kingdom", true),
@@ -185,27 +186,19 @@ class App extends React.Component {
           </div>
           <div className="main-dashboard">
             <div className="colour-key">
-              <div className="coloured-colour-key" style={{"color": colours.Fear}}>
-                <div className="coloured-circle" style={{"background": colours.Fear}}/>
-                Fear
+
+              {
+              
+               Object.entries(colours).map(([emotion,colour]) => (
+                <div className="coloured-colour-key" style={{"color": colour}}>
+                <div className="coloured-circle" style={{"background": colour}}/>
+                {emotion}
               </div>
-              <div className="coloured-colour-key" style={{"color": colours.Confident}}>
-                <div className="coloured-circle" style={{"background": colours.Confident}}/>
-                  Confident
-              </div>
-              <div className="coloured-colour-key" style={{"color": colours.Anger}}>
-                <div className="coloured-circle" style={{"background": colours.Anger}}/>
-                  Anger
-              </div>
-              <div className="coloured-colour-key" style={{"color": colours.Joy}}>
-                <div className="coloured-circle" style={{"background": colours.Joy}}/>
-                  Joy
-              </div>
-              <div className="coloured-colour-key" style={{"color": colours.Sadness}}>
-                <div className="coloured-circle" style={{"background": colours.Sadness}}/>
-                  Sadness
-              </div>
-            </div>
+               ))
+
+              }
+              
+             </div>
             <Dashboard data={this.state.dashboardData} colourCode={colours}/>
           </div>
           </Route>

@@ -15,11 +15,11 @@ export function useColourUpdate(){
 function ColourProvider({children}){
     //Colour state
     const [colours, setColours] = useState({
-        "Fear": "#C81B25",
+        "Apprehensive": "#C81B25",
         "Confident": "#3DC81B",
-        "Anger": '#B033AB',
+        "Impassioned": '#B033AB',
         "Joy": "#F39800",
-        "Sadness": "#00AEEF",
+        "Concerned": "#00AEEF",
       })
     //Fuction to change state
     const changeColour = (emotion, colourCode) => {
